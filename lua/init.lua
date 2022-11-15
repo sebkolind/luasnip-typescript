@@ -1,12 +1,12 @@
 local luasnip = require("luasnip")
 
+local snippet = luasnip.snippet
+local text = luasnip.text_node
+local insert = luasnip.insert_node
+
 local M = {}
 
 M.setup = function ()
-  local snippet = luasnip.snippet
-  local text = luasnip.text_node
-  local insert = luasnip.insert_node
-
   local snippets = {
     --[[
     if ($1) {
