@@ -51,6 +51,15 @@ M.setup = function ()
       text({" => {", "\t"}),
       insert(4),
       text({"", "}"})
+    }),
+    --[[
+    console.log($1)$2
+    --]]
+    snippet("log", {
+      text("console.log("),
+      insert(1),
+      text(")"),
+      insert(2),
     })
   }
 
